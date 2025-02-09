@@ -1,0 +1,105 @@
+@font-face {
+    font-family: 'Le Petit Cochon';
+    src: url('Petit Cochon.ttf') format('truetype');
+}
+
+body {
+    background: linear-gradient(180deg, #fff8dc, #ffedd5);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Baloo 2', sans-serif;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Floating Background Elements */
+.floating {
+    position: absolute;
+    animation: floatAnimation 6s ease-in-out infinite;
+    opacity: 0.8;
+}
+
+.cloud {
+    width: 120px;
+    top: 10%;
+    left: 10%;
+    animation-duration: 8s;
+}
+
+.star {
+    width: 50px;
+    top: 60%;
+    right: 20%;
+    animation-duration: 5s;
+}
+
+@keyframes floatAnimation {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(15px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+/* Logo Animation */
+.logo {
+    width: 80%;
+    max-width: 500px;
+    animation: fadeIn 1.5s ease-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Title */
+h1 {
+    font-family: 'Le Petit Cochon', cursive;
+    font-size: 7rem;
+    color: #f7c948;
+    text-shadow: -2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black, 2px 2px 0 black;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+/* Button */
+.start-button {
+    background-color: #f7c948;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: 0.3s ease-in-out;
+    text-decoration: none;
+    display: inline-block;
+}
+
+    .start-button:hover {
+        background-color: #f7a648;
+        transform: scale(1.1);
+        box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+    }

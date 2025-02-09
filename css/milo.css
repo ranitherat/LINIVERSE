@@ -1,0 +1,113 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Baloo 2', cursive, sans-serif; /* Apply the cuter font here */
+    background-color: #e6b8a2; /* Light orange background */
+    color: #333;
+    padding: 20px;
+    text-align: center;
+}
+
+.menu-button {
+    position: absolute;
+    font-family: 'Baloo 2', cursive, sans-serif; /* Apply the cuter font here */
+    top: 20px;
+    left: 20px;
+    background-color: #a64b2a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+    .menu-button:hover {
+        transform: scale(1.1);
+    }
+
+.character-card {
+    background-color: #ffffff;
+    border-radius: 30px;
+    padding: 30px;
+    max-width: 600px;
+    margin: 20px auto;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 2px solid #a64b2a; /* Orange border */
+}
+
+    .character-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+    }
+
+    .character-card img {
+        width: 100%;
+        max-width: 200px;
+        border-radius: 50%;
+        margin: 0 auto 20px;
+        display: block;
+        border: 4px solid #c96b47; /* Orange border for image */
+    }
+
+    .character-card h3 {
+        font-size: 2rem;
+        color: #a64b2a; /* Orange text for title */
+        margin-bottom: 10px;
+        font-weight: 600;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Subtle black shadow for contrast */
+    }
+
+    .character-card p {
+        font-size: 1.1rem;
+        color: #5c3c28;
+        margin-bottom: 20px;
+    }
+
+.backstory {
+    font-size: 1.1rem;
+    color: #5c3c28;
+    line-height: 1.7;
+    text-align: left;
+}
+
+    .backstory h4 {
+        font-size: 1.4rem;
+        color: #a64b2a; /* Orange color for subheadings */
+        margin-bottom: 15px;
+        text-decoration: underline;
+    }
+
+    .backstory p {
+        margin-bottom: 10px;
+        color: #6c6c6c;
+    }
+
+/* Cute Border and Decorations */
+.character-card::before {
+    content: '';
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 6px;
+    background-color: #a52a2a; /* Orange background for the decoration */
+    border-radius: 10px;
+}
+
+.character-card::after {
+    position: absolute;
+    bottom: -18px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 24px;
+}
